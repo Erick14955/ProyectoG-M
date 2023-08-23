@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Recursos\Logo gamo Tour.png" />
+    <None Remove="Recursos\Logo gamo.ico" />
+    <None Remove="Recursos\Logo gamo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Import Include="System.Windows" />
     <Import Include="System.Windows.Controls" />
     <Import Include="System.Windows.Data" />
@@ -21,7 +27,16 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="5.0.0-ci358" />
-    <PackageReference Include="ShowMeTheXAML.MSBuild" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Recursos\Logo gamo Tour.png" />
+    <Resource Include="Recursos\Logo gamo.ico" />
+    <Resource Include="Recursos\Logo gamo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UI\" />
   </ItemGroup>
 
 </Project>
