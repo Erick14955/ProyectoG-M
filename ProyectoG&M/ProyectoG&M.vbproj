@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="5.0.0-ci358" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
@@ -34,10 +35,6 @@
     <Resource Include="Recursos\Logo gamo Tour.png" />
     <Resource Include="Recursos\Logo gamo.ico" />
     <Resource Include="Recursos\Logo gamo.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="UI\" />
   </ItemGroup>
 
   <ItemGroup>

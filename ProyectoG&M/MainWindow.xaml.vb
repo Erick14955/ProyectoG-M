@@ -27,6 +27,8 @@ Class MainWindow
             Gamo.llenadt(consulta, dt, conexion)
 
             If dt.Rows.Count > 0 Then
+                Dim principal = New Principal()
+                principal.Show()
                 Me.Close()
             End If
         End If
@@ -56,6 +58,8 @@ Class MainWindow
                 llenadt(consulta, dt, conexion)
 
                 If dt.Rows.Count > 0 Then
+                    Dim principal = New Principal()
+                    principal.Show()
                     Me.Close()
                 End If
             End If

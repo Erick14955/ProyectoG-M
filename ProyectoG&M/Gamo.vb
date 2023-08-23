@@ -1,6 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 
+
 Module Gamo
     Public Sub llenadt(ByVal sql As String, ByRef dt As Data.DataTable, ByVal cs As String, Optional ByVal time As Integer = 30)
         Try
