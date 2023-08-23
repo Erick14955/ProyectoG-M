@@ -24,7 +24,7 @@ Class MainWindow
         consulta = "Select * from usuarios where usuario = '" & NombreTextBox.Text & "' and password = '" & ContraseñaTextBox.Password & "' and activo = 1"
 
         If NombreTextBox.Text <> "" And ContraseñaTextBox.Password <> "" Then
-            llenadt(consulta, dt, conexion)
+            Gamo.llenadt(consulta, dt, conexion)
 
             If dt.Rows.Count > 0 Then
                 Me.Close()
