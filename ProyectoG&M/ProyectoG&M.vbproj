@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="5.0.0-ci358" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
   <ItemGroup>
