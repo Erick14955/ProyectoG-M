@@ -30,6 +30,8 @@ Class MainWindow
                 Dim principal = New Principal()
                 principal.Show()
                 Me.Close()
+            Else
+                MsgBox("Usuario o contraseña incorrecto", MsgBoxStyle.Exclamation, "Gamo Tours")
             End If
         End If
     End Sub
@@ -61,6 +63,8 @@ Class MainWindow
                     Dim principal = New Principal()
                     principal.Show()
                     Me.Close()
+                Else
+                    MsgBox("Usuario o contraseña incorrecto", MsgBoxStyle.Exclamation, "Gamo Tours")
                 End If
             End If
         End If

@@ -12,11 +12,15 @@
         TextElement.FontSize="14"
         FontFamily="{materialDesign:MaterialDesignFont}"
         ResizeMode="CanMinimize"
-        Title="" Height="650" Width="1300">
+        Title="" Height="650" Width="1300" WindowStartupLocation="CenterScreen">
     <Grid>
-        <StackPanel Orientation="Horizontal">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="937*"/>
+            <ColumnDefinition Width="363*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <StackPanel Orientation="Vertical" Height="633.8" Width="220" Background="#1a2028">
-                
+
                 <StackPanel Height="100" Width="220" VerticalAlignment="Top" Background="#314252">
                     <Image Source="\Recursos\Logo gamo.png" Height="90 " Width="220" VerticalAlignment="Top" Margin="0,5,0,0"/>
                 </StackPanel>
@@ -24,36 +28,32 @@
                 <StackPanel Height="80" Width="220" Margin="0,5,0,0" Orientation="Horizontal" x:Name="StackPanelFacturacion">
                     <materialDesign:PackIcon Kind="ReceiptTextArrowRightOutline" VerticalAlignment="Center" Width="50" Height="50"/>
                     <Button x:Name="Facturacion" Content="Facturacion" FontFamily="Times New Roman" FontWeight="Bold"  VerticalAlignment="Center" FontSize="22" 
-                    Background="#1a2028" Style="{StaticResource MaterialDesignFlatButton}" IsMouseCapturedChanged="Button_IsMouseCapturedChanged"
-                    Click="Facturacion_Click"/>
+                    Background="#1a2028" Style="{StaticResource MaterialDesignFlatButton}" Click="Facturacion_Click"/>
                 </StackPanel>
 
                 <StackPanel Height="80" Width="220" Margin="0,5,0,0" Orientation="Horizontal" x:Name="StackPanelReportes">
                     <materialDesign:PackIcon Kind="FileChart" VerticalAlignment="Center" Width="50" Height="50"/>
                     <Button x:Name="Reportes" Content="Reportes" FontFamily="Times New Roman" VerticalAlignment="Center" FontWeight="Bold" FontSize="22" 
-                    Style="{StaticResource MaterialDesignFlatButton}" IsMouseCapturedChanged="Button_IsMouseCapturedChanged_1"
-                    Click="Reportes_Click"/>
+                    Style="{StaticResource MaterialDesignFlatButton}" Click="Reportes_Click"/>
                 </StackPanel>
 
                 <StackPanel Height="80" Width="220" Margin="0,5,0,0" Orientation="Horizontal" x:Name="StackPanelRegistros">
                     <materialDesign:PackIcon Kind="AccountEdit" VerticalAlignment="Center" Width="50" Height="50"/>
                     <Button x:Name="Registros" Content="Registros" FontFamily="Times New Roman" FontWeight="Bold" VerticalAlignment="Center" FontSize="22" 
-                    Style="{StaticResource MaterialDesignFlatButton}" IsMouseCapturedChanged="Button_IsMouseCapturedChanged_2"
-                    Click="Registros_Click"/>
+                    Style="{StaticResource MaterialDesignFlatButton}" Click="Registros_Click"/>
                 </StackPanel>
 
 
                 <StackPanel Height="80" Width="220" Margin="0,5,0,0" Orientation="Horizontal" x:Name="StackPanelConsultas">
                     <materialDesign:PackIcon Kind="DatabaseSearch" VerticalAlignment="Center" Width="50" Height="50"/>
                     <Button x:Name="Consultas" Content="Consultas" FontFamily="Times New Roman" FontWeight="Bold" VerticalAlignment="Center" FontSize="22" 
-                    Style="{StaticResource MaterialDesignFlatButton}" IsMouseCapturedChanged="Button_IsMouseCapturedChanged_3"
-                    Click="Consultas_Click"/>
+                    Style="{StaticResource MaterialDesignFlatButton}" Click="Consultas_Click"/>
                 </StackPanel>
-            
+
             </StackPanel >
 
             <StackPanel Orientation="Vertical" Height="633.8" Width="1080" Background="#314252">
- 
+
             </StackPanel>
 
         </StackPanel>
